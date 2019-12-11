@@ -1,0 +1,20 @@
+{
+    "name": "instagram_hashtag_notifier",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "bin": "bin.js",
+    "pkg": {
+        "scripts": "*/*.js"
+    },
+    "scripts": {
+        "start": "node run.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "download-file": "^0.1.5",
+        "instagram-scraping": "^1.0.11",
+        "node-notifier": "^6.0.0"
+    }
+}
