@@ -44,7 +44,7 @@ const init = (argv) => {
         let tags = [];
         for (let i = 3; i < argv.length; i++)
             tags.push(argv[i]);
-        __init(argv[2], tags)
+        __init(parseInt(argv[2].toString()), tags)
     }
 }
 

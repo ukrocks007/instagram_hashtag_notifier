@@ -1,1 +1,1 @@
-require('./index')(['', '', 10, "quantumcomputing", "qubit", "trending"])
+require('./index')(process.argv)

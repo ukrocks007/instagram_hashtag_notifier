@@ -8,7 +8,7 @@
         "scripts": "*/*.js"
     },
     "scripts": {
-        "start": "node run.js"
+        "start": "node run.js 10 \"quantumcomputing\" \"qubit\" \"trending\""
     },
     "author": "",
     "license": "ISC",
