@@ -1,8 +1,9 @@
 var ig = require('instagram-scraping');
 var notify = require('./notify').notify;
-let latest;
+let hashTags = [];
 let changed = false;
-const __init = async (timeout, hashTags) => {
+const __init = async (timeout, tags) => {
+    hashTags = tags ? tags : [];
     let info = {};
     while (true) {
         try {
@@ -54,5 +55,42 @@ function sleep(ms) {
     })
 }
 
+const setTags = (tags) => {
+    try {
+        hashTags = tags;
+        return hashTags;
+    } catch (ex) {
+        console.log(ex);
+    }
+}
+
+const addTag = (tag) => {
+    try {
+        hashTags.push(tag);
+        return hashTags;
+    } catch (ex) {
+        console.log(ex);
+    }
+}
+
+const getTags = () => {
+    try {
+        return hashTags;
+    } catch (ex) {
+        console.log(ex);
+    }
+}
+
+const removeTag = (tag) => {
+    try {
+        hashTags = hashTags.filter(e => e !== tag);
+        return hashTags;
+    } catch (ex) {
+        console.log(ex);
+    }
+}
+
 //init(10, ["quantumcomputing", "pubg", "discovery", "nature"]);
-module.exports = init;
+module.exports = {
+    init, setTags, addTag, getTags, removeTag
+};

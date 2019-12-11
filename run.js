@@ -1,1 +1,3 @@
-require('./index')(process.argv)
+require('./server')();
+
+require('./index').init(process.argv)

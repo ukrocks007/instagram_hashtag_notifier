@@ -11,6 +11,7 @@
             "<node_internals>/**"
         ],
         "runtimeExecutable": "/usr/local/bin/node",
-        "program": "${workspaceFolder}/index.js"
+        "program": "${workspaceFolder}/run.js",
+        "args": ["10", "quantumcomputing", "qubit", "trending"]
     }]
 }
