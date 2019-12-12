@@ -3,6 +3,9 @@ const http = require('http');
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const rimraf = require('rimraf');
+
+rimraf("./temp/" + '*', function () { console.log('garbage cleaned'); });
 
 const start = () => {
     let app = express();

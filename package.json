@@ -18,6 +18,7 @@
         "download-file": "^0.1.5",
         "express": "^4.17.1",
         "instagram-scraping": "^1.0.11",
-        "node-notifier": "^6.0.0"
+        "node-notifier": "^6.0.0",
+        "rimraf": "^3.0.0"
     }
 }
